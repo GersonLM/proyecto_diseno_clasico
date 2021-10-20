@@ -31,12 +31,20 @@ const sliders = () =>{
 // DESPLAZAR Y ENCOJER INFORMACION
 
 let desplazar = document.querySelector(".li")
-let iconReplace = document.querySelector(".fa-chevron-down")
+let iconReplace = document.querySelector(".fas")
+let id = document.getElementById("li-arriba")
 
 desplazar.addEventListener("click", ()=>{
-    console.log("hola")
-    iconReplace.remove();
-    desplazar.innerHTML = '<i class="fas fa-chevron-up"></i>'
-    
+    if(iconReplace === id){
+        iconReplace.remove();
+        desplazar.innerHTML = '<i class="fas fa-chevron-up fa-2x color-icon "></i>'
+        iconReplace = document.querySelector(".fas")
+    } 
+    else{
+        iconReplace.remove();
+        desplazar.innerHTML = '<i id="li-arriba" class="fas fa-chevron-down fa-2x color-icon "></i>'   
+        iconReplace = document.querySelector(".fas")
+        id = document.getElementById("li-arriba")
+    } 
 })
 
