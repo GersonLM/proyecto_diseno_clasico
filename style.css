@@ -58,6 +58,7 @@ header nav ul {
 
 .list-items:hover {
     transform: scale(1.1);
+    color: #f9b333;
     opacity: 0.9;
 }
 
@@ -99,7 +100,7 @@ header nav ul {
 
 .slider-ocultar {
     display: hidden;
-    transition: .7s;
+    transition: 2s;
 }
 
 .container-producto{
@@ -124,13 +125,31 @@ header nav ul {
 
 
 /* -------------INFORMACION DE PRODCUT0S DESPLEGABLE ---------------*/
-/* icono de desplace */
+/* info de desplace */
+.container-info-desplegable {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
 
+
+
+.article{
+    width: 300px;
+    height: 300px;
+    background-color: #363636e1;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+.article-info img {
+    width: 250px;
+}
 
 /*--------------------- FOOTER  -------------------------*/
 footer {
     background-color: #282828;
-    
 
 }
 .footer-container {
@@ -139,6 +158,7 @@ footer {
     display: flex;
     padding: 40px 6%;
     align-items: space-around;
+    
 }
 .contenido-footer {
     width: 25%;
@@ -209,7 +229,27 @@ footer {
 .r-p-info img {
     position: relative;
     top: -28px;
-    width: 150px;
+    width: 120px;
     margin-right: 15px;
    
+}
+
+.info-static {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    top: 929px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1ae1 ;
+}
+
+.icon-R {
+    margin-right: 6px;
+}
+
+#footer {
+    overflow: hidden;
+    transition: 1s;
 }
